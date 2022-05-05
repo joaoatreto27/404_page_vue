@@ -100,5 +100,4 @@ coverage/
 
 .DS_Store
 
-# Visual Studio Code
-.vscode/
+ui.apps/src/main/content/jcr_root/apps/vue/clientlibs/clientlib-vue

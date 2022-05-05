@@ -4,6 +4,7 @@ import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
 import Header from './components/Header/Header'
 import Image from './components/Image/Image'
+import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -25,6 +26,12 @@ const EditConfig = {
 **********************************************************************/
 
 MapTo('vue/components/customclasses')(CustomClasses, EditConfig)
+
+// Teste Component Mapping
+MapTo('vue/components/multifield-example-component')(
+  MultifieldExampleComponent,
+  EditConfig
+)
 
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox')(CheckBox, EditConfig)
