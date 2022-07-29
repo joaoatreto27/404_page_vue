@@ -4,6 +4,7 @@ import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
 import HeaderComp from './components/Containers/HeaderComp/HeaderComp'
 import Image from './components/Image/Image'
+import TitleComp from './components/micro/TitleComp/TitleComp'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import {
   withComponentMappingContext,
@@ -32,6 +33,8 @@ MapTo('vue/components/multifield-example-component')(
   MultifieldExampleComponent,
   EditConfig
 )
+
+MapTo('vue/components/title-comp')(TitleComp, EditConfig)
 
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox')(CheckBox, EditConfig)
