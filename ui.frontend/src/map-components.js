@@ -2,7 +2,7 @@ import CustomClasses from './components/CustomClasses/CustomClasses'
 import Text from './components/Text/Text'
 import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
-import Header from './components/Header/Header'
+import HeaderComp from './components/Containers/HeaderComp/HeaderComp'
 import Image from './components/Image/Image'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import {
@@ -36,8 +36,7 @@ MapTo('vue/components/multifield-example-component')(
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox')(CheckBox, EditConfig)
 
-// Header Component Mapping
-MapTo('vue/components/header')(Header, EditConfig)
+MapTo('vue/components/header-comp')(HeaderComp)
 
 // Image Component Mapping
 MapTo('vue/components/image')(Image, {
