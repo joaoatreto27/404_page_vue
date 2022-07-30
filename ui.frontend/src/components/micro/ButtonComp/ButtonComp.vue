@@ -1,16 +1,16 @@
 <template>
   <div>
-    <p>{{msg}}</p>
+    <button>{{msgBtn}}</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'TextComp',
+  name: 'ButtonComp',
   props: {
-    msg: {
+    msgBtn: {
       type: String,
-      default: 'The page you are looking for might be removed or is temporarily unavailable'
+      default: 'BACK TO HOMEPAGE'
     }
   }
 }
@@ -23,11 +23,12 @@ export default {
     font-family: "Space Mono", monospace;
 }
 
-p {
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 400;
-    color: #4f4f4f;
+button{
+    width: 216px;
+    height: 68px;
+    background-color: #333333;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
 }
-
 </style>

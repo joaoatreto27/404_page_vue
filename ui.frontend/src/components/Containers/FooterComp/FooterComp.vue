@@ -1,18 +1,18 @@
 <template>
 <footer>
-    <p>created by <div class="username">{{username}}</div> - devChallenges.io</p>
-</footer>  
+    <p>created by {{username}} - devChallenges.io</p>
+</footer>
 </template>
 
 <script>
 export default {
-    name: 'FooterComp',
-    props:{
-        username:{
-            type: String,
-            default: joaoatreto27
-        }
+  name: 'FooterComp',
+  props: {
+    username: {
+      type: String,
+      default: 'joaoatreto27'
     }
+  }
 }
 </script>
 

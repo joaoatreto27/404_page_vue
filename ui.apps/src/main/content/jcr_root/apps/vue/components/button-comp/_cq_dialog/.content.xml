@@ -14,8 +14,8 @@
                     <title
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Text"
-                        name="./msg"/>
+                        fieldLabel="Button Text"
+                        name="./msgBtn"/>
                 </items>
             </column>
         </items>
