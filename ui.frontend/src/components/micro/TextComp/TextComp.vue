@@ -6,13 +6,13 @@
 
 <script>
 export default {
-    name: 'TextComp',
-    props: {
-        msg: {
-            type: String,
-            default: 'The page you are looking for might be removed or is temporarily unavailable'
-        }
+  name: 'TextComp',
+  props: {
+    msg: {
+      type: String,
+      default: 'The page you are looking for might be removed or is temporarily unavailable'
     }
+  }
 }
 </script>
 

@@ -37,7 +37,6 @@ MapTo('vue/components/multifield-example-component')(
 
 MapTo('vue/components/title-comp')(TitleComp, EditConfig)
 
-
 MapTo('vue/components/text-comp')(TextComp, EditConfig)
 
 // Checkbox Component Mapping

@@ -6,13 +6,13 @@
 
 <script>
 export default {
-    name: 'TitleComp',
-    props: {
-        TitleText: {
-            type: String,
-            default: 'I have bad news for you' 
-        }
+  name: 'TitleComp',
+  props: {
+    TitleText: {
+      type: String,
+      default: 'I have bad news for you'
     }
+  }
 }
 </script>
 
