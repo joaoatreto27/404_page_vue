@@ -16,14 +16,11 @@ export default {
 }
 </script>
 
-<style scooped>
+<style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
-* {
-    font-family: "Space Mono", monospace;
-}
-
 p {
+    font-family: "Space Mono", monospace;
     font-size: 24px;
     line-height: 36px;
     font-weight: 400;

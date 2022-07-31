@@ -16,14 +16,11 @@ export default {
 }
 </script>
 
-<style scooped>
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-
-* {
-    font-family: "Inconsolata", monospace;
-}
+<style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
 
 header{
+    font-family: "Inconsolata", monospace;
     width: 100%;
     font-size: 24px;
     font-weight: 700;

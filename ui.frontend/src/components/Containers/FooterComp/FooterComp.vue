@@ -16,20 +16,17 @@ export default {
 }
 </script>
 
-<style scooped>
+<style lang="scss" scoped>
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-*{
-    font-family: "Montserrat", sans-serif;
-}
-
 footer {
+    font-family: "Montserrat", sans-serif;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    margin-top: 308px;
 }
 
 p {
@@ -37,7 +34,4 @@ p {
     color: #bdbdbd;
 }
 
-div {
-    font-weight: bold;
-}
 </style>

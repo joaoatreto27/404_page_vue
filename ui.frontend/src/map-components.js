@@ -7,6 +7,7 @@ import Image from './components/Image/Image'
 import TitleComp from './components/micro/TitleComp/TitleComp'
 import TextComp from './components/micro/TextComp/TextComp'
 import ButtonComp from './components/micro/ButtonComp/ButtonComp'
+import FooterComp from './components/Containers/FooterComp/FooterComp'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import {
   withComponentMappingContext,
@@ -43,6 +44,8 @@ MapTo('vue/components/title-comp')(TitleComp, EditConfig)
 MapTo('vue/components/text-comp')(TextComp, EditConfig)
 
 MapTo('vue/components/button-comp')(ButtonComp, EditConfig)
+
+MapTo('vue/components/footer-comp')(FooterComp, EditConfig)
 
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox')(CheckBox, EditConfig)
