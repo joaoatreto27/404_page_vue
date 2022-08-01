@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button>{{msgBtn}}</button>
+    <button :style="{'color': TextColor, 'font-family': FontBtn, 'background-color' : BtnColor }">{{msgBtn}}</button>
   </div>
 </template>
 
@@ -11,6 +11,18 @@ export default {
     msgBtn: {
       type: String,
       default: 'BACK TO HOMEPAGE'
+    },
+    TextColor: {
+      type: String,
+      default: '#ffffff'
+    },
+    FontBtn: {
+      type: String,
+      default: 'space-mono'
+    },
+    BtnColor: {
+      type: String,
+      default: '#333333'
     }
   }
 }
@@ -18,6 +30,8 @@ export default {
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 button{
     font-family: "Space Mono", monospace;

@@ -11,12 +11,64 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <className
+                    <header
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Header Title"
-                        name="./text"/>
-                </items>
+                        jcr:title="Header"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <Text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Header Text:"
+                                name="./TextHeader"/>
+                            <HeaderClass 
+                                cq-msm-lockable="./HeaderClass"
+                                defaultValue="SpaceMono"
+                                fieldLabel="Header Style:"
+                                jcr:primaryType="nt:unstructured"
+                                name="./HeaderClass"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                value="false">
+                                <items jcr:primaryType="nt:unstructured">
+                                        <SpaceMono jcr:primaryType="nt:unstructured" text="SpaceMono" value="space-mono"/>
+                                        <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="inconsolata"/>
+                                        <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="montserrat"/>      
+                                </items>
+                            </HeaderClass> 
+                            <HeaderColor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldLabel="Header Color"
+                                showDefaultColors="false"
+                                name="./HeaderColor">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <black
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#000000"/>
+                                    <blue
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#0000FF"/>
+                                    <green
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FF00"/>
+                                    <red
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF0000"/>
+                                    <white
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FFFFFF" />
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#333333"
+                                    />
+                                </items>
+                            </HeaderColor> 
+                        </items>
+                    </Header>
             </column>
         </items>
     </content>

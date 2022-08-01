@@ -11,11 +11,61 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <title
+                    <Button
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Button Text"
-                        name="./msgBtn"/>
+                        jcr:title="Button"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items 
+                            jcr:primaryType="nt:unstructured">
+                            <msgBtn
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Text Button:"
+                                name="./msgBtn"/>
+                            <FontBtn 
+                                cq-msm-lockable="./fontButton"
+                                defaultValue="Space Mono"
+                                fieldLabel="Font Button:"
+                                jcr:primaryType="nt:unstructured"
+                                name="./FontBtn"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                value="false">
+                                <items jcr:primaryType="nt:unstructured">
+                                        <SpaceMono jcr:primaryType="nt:unstructured" text="SpaceMono" value="Space Mono"/>
+                                        <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                                        <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>      
+                                </items>
+                            </FontBtn> 
+                            <BtnColor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldLabel="Button Color:"
+                                showDefaultColors="false"
+                                name="./BtnColor">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <preto
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#000000"/>
+                                    <azul
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#0000FF"/>
+                                    <verde
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FF00"/>
+                                    <vermelho
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF0000"/>
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#333333"/>
+                                </items>
+                            </BtnColor>
+                        </items>
+                    </Button>
                 </items>
             </column>
         </items>
