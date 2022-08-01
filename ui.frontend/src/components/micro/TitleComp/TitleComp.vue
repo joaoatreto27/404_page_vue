@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>{{TitleText}}</h1>
+        <h1 :class="TitleClass" :style="{ 'color': TitleColor}">{{TitleText}}</h1>
     </div>
 </template>
 
@@ -11,7 +11,8 @@ export default {
     TitleText: {
       type: String,
       default: 'I have bad news for you'
-    }
+    },
+    
   }
 }
 </script>
@@ -25,5 +26,12 @@ h1 {
     line-height: 95px;
     color: #333333;
     font-weight: 700;
+    margin-right: 25px;
+
+    @media (max-width: 750px) {
+      font-size: 48px;
+      line-height: 60px;
+      margin-right: 0px;
+    }
 }
 </style>

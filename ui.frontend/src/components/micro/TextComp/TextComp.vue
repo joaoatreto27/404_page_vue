@@ -25,6 +25,22 @@ p {
     line-height: 36px;
     font-weight: 400;
     color: #4f4f4f;
+    margin-right: 25px;
+    width: 381px;
+
+    @media (max-width: 750px) {
+      font-size: 18px;
+      margin-right: 0px;
+    }
+
+    @media (max-width: 415px) {
+      margin-top: 50px;
+    }
+
+    @media (max-width: 395px) {
+      margin-top: 25px;
+    }
+
 }
 
 </style>

@@ -1,6 +1,6 @@
 <template>
 <footer>
-    <p>created by {{username}} - devChallenges.io</p>
+    <p>created by <span>{{username}}</span> - devChallenges.io</p>
 </footer>
 </template>
 
@@ -26,12 +26,25 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 308px;
+    margin-top: 80px;
+
+    @media (max-width: 415px) {
+      margin-top: 125px;
+    }
+
+    @media (max-width: 395px) {
+      margin-top: 85px;
+    }
 }
 
 p {
     font-size: 14px;
     color: #bdbdbd;
+
+    span {
+      font-weight: bold;
+      border-bottom: 1px;
+    }
 }
 
 </style>

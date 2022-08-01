@@ -27,5 +27,14 @@ button{
     font-size: 14px;
     color: #ffffff;
     font-weight: 700;
+    margin-top: 50px;
+
+    @media (max-width: 415px) {
+      margin-top: 50px;
+    }
+
+    @media (max-width: 395px) {
+      margin-top: 25px;
+    }
 }
 </style>
