@@ -13,9 +13,62 @@
                 <items jcr:primaryType="nt:unstructured">
                     <title
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Title Text"
-                        name="./TitleText"/>
+                        jcr:title="Title"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <TitleText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Title Text:"
+                                name="./TitleText"/>
+                            <TitleClass 
+                                cq-msm-lockable="./TitleClass"
+                                defaultValue="SpaceMono"
+                                fieldLabel="Title Style:"
+                                jcr:primaryType="nt:unstructured"
+                                name="./TitleClass"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                value="false">
+                                <items jcr:primaryType="nt:unstructured">
+                                        <SpaceMono jcr:primaryType="nt:unstructured" text="SpaceMono" value="space-mono"/>
+                                        <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="inconsolata"/>
+                                        <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="montserrat"/>      
+                                </items>
+                            </TitleClass> 
+                            <TitleColor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldLabel="Title Color"
+                                showDefaultColors="false"
+                                name="./TitleColor">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <black
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#000000"/>
+                                    <blue
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#0000FF"/>
+                                    <green
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FF00"/>
+                                    <red
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF0000"/>
+                                    <white
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FFFFFF" />
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#333333"
+                                    />
+                                </items>
+                            </TitleColor> 
+                        </items>
+                    </title>
                 </items>
             </column>
         </items>

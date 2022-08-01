@@ -28,6 +28,7 @@ button{
     color: #ffffff;
     font-weight: 700;
     margin-top: 50px;
+    border: none;
 
     @media (max-width: 415px) {
       margin-top: 50px;
